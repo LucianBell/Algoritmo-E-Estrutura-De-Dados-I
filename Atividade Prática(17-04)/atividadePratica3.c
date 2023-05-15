@@ -15,7 +15,7 @@ int main()
 		}
 
 		if (num1 > 0 && num2 >0) {
-			printf("O intervalo possui 0 números negativos é %d", ((num2 - num1) + 1));
+			printf("O intervalo possui 0 números negativos e %d", ((num2 - num1) + 1));
 		} else if (num1 < 0 && num2 < 0) {
 				printf("O intervalo possui %d números negativos e 0 números positivos", ((num2 - num1) + 1));
 			} else {
