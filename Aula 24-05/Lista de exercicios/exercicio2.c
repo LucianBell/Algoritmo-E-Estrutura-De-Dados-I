@@ -9,11 +9,13 @@ int main()
     int entradas, atual, maior;
     entradas = 0;
     atual = 0;
-    maior = 0;
 
-    while (entradas < 10)
+    printf("Insira um número: ");
+    scanf("%d", &maior);
+
+    while (entradas < 9)
     {
-        printf("Insira um número: \n");
+        printf("Insira um número: ");
         scanf("%d", &atual);
         if (atual > maior) {
             maior = atual;
