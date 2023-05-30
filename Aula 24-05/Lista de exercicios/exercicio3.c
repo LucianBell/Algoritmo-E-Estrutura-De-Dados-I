@@ -6,9 +6,11 @@
 int main()
 {
     int entradas, menor, maior, atual;
-    entradas = 0;
-    menor = 100;
-    maior = 0;
+    entradas = 2;
+
+    printf("Insira um numero: ");
+    scanf("%d", &maior);
+    menor = maior;
 
     while (entradas <= 100)
     {
