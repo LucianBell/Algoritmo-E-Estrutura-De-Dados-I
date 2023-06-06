@@ -29,7 +29,7 @@ int main()
         printf("**********************\n");
         printf("*NUMERO******FATORIAL*\n");
         printf("**********************\n");
-        printf("*  %d     *     %d   *\n", num, fatorial);
+        printf("*   %d    *     %d   *\n", num, fatorial);
         printf("**********************\n");
         controle++;
     }
