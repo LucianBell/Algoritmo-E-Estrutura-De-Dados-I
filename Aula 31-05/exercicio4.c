@@ -1,6 +1,7 @@
 /*
-4) Faça um algoritmo que leia um número n que indica quantos valores devem ser lidos a seguir.
-Para cada número lido, mostre uma tabela contendo o valor lido e o fatorial deste valor.
+4)   
+Escreva um algoritmo que gere a
+tabuada a partir de um número informado pelo usuário.
 */
 
 #include <stdio.h>
@@ -8,32 +9,17 @@ Para cada número lido, mostre uma tabela contendo o valor lido e o fatorial des
 
 int main()
 {
-    int numsALer, num, controle, controle1, fatorial;
+    int num, ctrl;
+    ctrl = 1;
 
-    printf("Insira quantos valores você vai informar: ");
-    scanf("%d", &numsALer);
+    printf("Insira um número para ver sua tabuada: ");
+    scanf("%d", &num);
 
-    controle = 0;
-
-    while (controle < numsALer)
+    while (ctrl <= 10)
     {
-        printf("Insira o valor desejado: ");
-        scanf("%d", &num);
-        controle1 = (num - 1);
-        fatorial = num;
-        while (controle1 != 1)
-        {
-            fatorial = (fatorial * (controle1));
-            controle1--;
-        }
-        printf("**********************\n");
-        printf("*NUMERO******FATORIAL*\n");
-        printf("**********************\n");
-        printf("*  %d     *     %d   *\n", num, fatorial);
-        printf("**********************\n");
-        controle++;
+        printf("%d x %d = %d\n", ctrl, num, (num * ctrl));
+        ctrl++;
     }
-    printf("Finalizando programa...");
 
     return 0;
 }
