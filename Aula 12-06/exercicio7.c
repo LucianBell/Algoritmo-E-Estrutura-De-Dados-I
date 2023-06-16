@@ -21,12 +21,12 @@ elemento de A com o 20o elemento de B, o 2o de A com o 19o de B, e assim por dia
 
 int main()
 {
-    char arrayA[5], arrayB[5], arrayAuxiliar[5];
-    int controle = 0, controle1 = 5;
+    char arrayA[20], arrayB[20], arrayAuxiliar[20];
+    int controle = 0;
 
     printf("Insira os valores do primeiro array:\n");
 
-    while (controle < 5)
+    while (controle < 20)
     {
         fflush(stdin);
         scanf("%c", &arrayA[controle]);
@@ -37,7 +37,7 @@ int main()
 
     printf("Insira os valores do segundo array:\n");
 
-    while (controle < 5)
+    while (controle < 20)
     {
         fflush(stdin);
         scanf("%c", &arrayB[controle]);
@@ -47,7 +47,7 @@ int main()
     controle = 0;
 
     printf("Vetor/Array A (antes da troca):\n");
-    while (controle < 5)
+    while (controle < 20)
     {
         printf("%c ", arrayA[controle]);
         controle++;
@@ -57,7 +57,7 @@ int main()
     controle = 0;
 
     printf("Vetor/Array B (antes da troca):\n");
-    while (controle < 5)
+    while (controle < 20)
     {
         printf("%c ", arrayB[controle]);
         controle++;
@@ -67,7 +67,7 @@ int main()
 
     //Parte 2
 
-    while (controle < 5)
+    while (controle < 20)
     {
         arrayAuxiliar[controle] = arrayA[controle];
         controle++;
@@ -75,7 +75,7 @@ int main()
     
     controle = 0;
 
-    while (controle < 5)
+    while (controle < 20)
     {
         arrayA[controle] = arrayB[controle]; 
         controle++;
@@ -83,7 +83,7 @@ int main()
     
     controle = 0;
 
-    while (controle < 5)
+    while (controle < 20)
     {
         arrayB[controle] = arrayAuxiliar[controle];
         controle++;
@@ -95,7 +95,7 @@ int main()
     controle = 0;
 
     printf("Vetor/Array A (depois da troca):\n");
-    while (controle < 5)
+    while (controle < 20)
     {
         printf("%c ", arrayA[controle]);
         controle++;
@@ -105,7 +105,7 @@ int main()
     controle = 0;
 
     printf("Vetor/Array B (depois da troca):\n");
-    while (controle < 5)
+    while (controle < 20)
     {
         printf("%c ", arrayB[controle]);
         controle++;
