@@ -8,12 +8,12 @@ produto da variável A pelo vetor F. Mostre o vetor G no final.
 
 int main()
 {
-    int arrayF[5], arrayG[5];
+    int arrayF[20], arrayG[20];
     int varA, controle = 0;
 
     printf("Insira os valores para a array F\n");
 
-    while (controle < 5)
+    while (controle < 20)
     {
         scanf("%d", &arrayF[controle]);
         controle++;
@@ -24,7 +24,7 @@ int main()
 
     controle = 0;
 
-    while (controle < 5)
+    while (controle < 20)
     {
         arrayG[controle] = (varA * arrayF[controle]);
         controle++;
@@ -33,9 +33,9 @@ int main()
     controle = 0;
 
     printf("O array G é igual a: [");
-    while (controle < 5)
+    while (controle < 20)
     {
-        if (controle < 4) {
+        if (controle < 19) {
         printf("%d, ", arrayG[controle]);
         } else {
             printf("%d", arrayG[controle]);
