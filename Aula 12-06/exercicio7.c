@@ -22,7 +22,7 @@ elemento de A com o 20o elemento de B, o 2o de A com o 19o de B, e assim por dia
 int main()
 {
     char arrayA[5], arrayB[5], arrayAuxiliar[5];
-    int controle = 0;
+    int controle = 0, controle1 = 5;
 
     printf("Insira os valores do primeiro array:\n");
 
@@ -63,6 +63,54 @@ int main()
         controle++;
     }
 
+    controle = 0;
+
+    //Parte 2
+
+    while (controle < 5)
+    {
+        arrayAuxiliar[controle] = arrayA[controle];
+        controle++;
+    }
+    
+    controle = 0;
+
+    while (controle < 5)
+    {
+        arrayA[controle] = arrayB[controle]; 
+        controle++;
+    }
+    
+    controle = 0;
+
+    while (controle < 5)
+    {
+        arrayB[controle] = arrayAuxiliar[controle];
+        controle++;
+    }
+
+    //Parte 3
+
+    printf("\n");
+    controle = 0;
+
+    printf("Vetor/Array A (depois da troca):\n");
+    while (controle < 5)
+    {
+        printf("%c ", arrayA[controle]);
+        controle++;
+    }
+
+    printf("\n");
+    controle = 0;
+
+    printf("Vetor/Array B (depois da troca):\n");
+    while (controle < 5)
+    {
+        printf("%c ", arrayB[controle]);
+        controle++;
+    }
+    
 
     return 0;
 }
