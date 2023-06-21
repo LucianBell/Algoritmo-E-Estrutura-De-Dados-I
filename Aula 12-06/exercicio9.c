@@ -12,8 +12,27 @@ de positivos vazio”).
 
 int main()
 {
-    int vetorA[8];
+    int vetorA[8], vetorB[8], vetorC[8];
+    int ctrl = 0;
 
     printf("Insira os valores do vetor A\n");
+    
+    while (ctrl < 8) {
+        scanf("%d", &vetorA[ctrl]);
+        ctrl++;
+    } 
+
+    ctrl = 0;
+    printf("Vetor original: ");
+
+    while (ctrl < 8)
+    {
+        printf("%d ", vetorA[ctrl]);
+        ctrl++;
+    }
+    
+    ctrl = 0;
+
+
     return 0;
 }
