@@ -13,7 +13,7 @@ de positivos vazio”).
 int main()
 {
     int vetorA[8], vetorB[8], vetorC[8];
-    int ctrl = 0;
+    int ctrl = 0, ctrl1 = 0, ctrl2 = 0;
 
     printf("Insira os valores do vetor A\n");
     
@@ -33,6 +33,46 @@ int main()
     
     ctrl = 0;
 
+    while (ctrl < 8)
+    {
+        if (vetorA[ctrl] >= 0) {
+            vetorB[ctrl1] = vetorA[ctrl];
+            ctrl1++;
+        } else {
+            vetorC[ctrl2] = vetorA[ctrl];
+            ctrl2++;
+        }
+        ctrl++;
+    }
+
+    ctrl = 0;
+    printf("\n");
+
+    if (ctrl1 < 1) {
+        printf("Vetor de positivos (vetor B) vazio");
+    } else {
+        printf("Vetor B (valores positivos): ");
+        while (ctrl < ctrl1)
+        {
+            printf("%d ", vetorB[ctrl]);
+            ctrl++;
+        }
+    }
+
+    ctrl = 0;
+
+    printf("\n");
+    if (ctrl2 < 1) {
+        printf("Vetor de negativos (vetor C) vazio\n");        
+    } else {
+        printf("Vetor C (valores positivos): ");
+        while (ctrl < ctrl2)
+        {
+            printf("%d ", vetorC[ctrl]);
+            ctrl++;
+        }    
+
+    }
 
     return 0;
 }
